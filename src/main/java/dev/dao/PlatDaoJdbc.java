@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import dev.entite.Plat;
 
-@Repository
+
 public class PlatDaoJdbc implements IPlatDao {
 
 	// outil JdbcTemplate fourni par Spring JDBC  
