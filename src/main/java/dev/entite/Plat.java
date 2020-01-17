@@ -4,13 +4,26 @@ import java.util.Objects;
 
 public class Plat {
 
+	private Integer id;
     private String nom;
     private Integer prixEnCentimesEuros;
 
     public Plat() {
     }
 
-    public Plat(String nom, Integer prixEnCentimesEuros) {
+    /**
+	 * @param id
+	 * @param nom
+	 * @param prixEnCentimesEuros
+	 */
+	public Plat(Integer id, String nom, Integer prixEnCentimesEuros) {
+		super();
+		this.id = id;
+		this.nom = nom;
+		this.prixEnCentimesEuros = prixEnCentimesEuros;
+	}
+
+	public Plat(String nom, Integer prixEnCentimesEuros) {
         this.nom = nom;
         this.prixEnCentimesEuros = prixEnCentimesEuros;
     }
@@ -43,4 +56,18 @@ public class Plat {
     public int hashCode() {
         return Objects.hash(nom);
     }
+
+	/** Getter
+	 * @return the id
+	 */
+	public Integer getId() {
+		return id;
+	}
+
+	/** Setter
+	 * @param id the id to set
+	 */
+	public void setId(Integer id) {
+		this.id = id;
+	}
 }
